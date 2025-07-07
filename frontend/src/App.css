@@ -1,0 +1,86 @@
+.App {
+  font-family: Avenir, sans-serif;
+  padding: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.product-card {
+  min-width: 220px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.product-card img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.selected-color {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+
+/* Rating container styles */
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+  gap: 8px;
+}
+
+.rating-text {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Optional: Adjust star sizing if needed */
+.react-stars {
+  display: flex;
+}
+.color-swatches {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.color-swatches img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.color-swatches img.active {
+  border-color: #ffcc00;
+}
